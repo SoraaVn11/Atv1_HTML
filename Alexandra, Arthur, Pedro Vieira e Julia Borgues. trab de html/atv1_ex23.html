@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Virtual</title>
+    <style>
+        .bloco div{
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+            height: auto;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        select, input[type="radio"], input[type="checkbox"] {
+            margin-top: 5px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Escola Virtual</h1>
+    <h2 style="text-align: center;">Formulário de Pré-Matrícula</h2>
+    <form action="#" method="post" style="text-align: center;">
+        <div>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <table>
+                    <tr>
+                        <td style="text-align: right;">
+                            <label for="nome">Nome do Aluno:</label><br>
+                            <label for="nascimento">Nascimento (dd/mm/aaaa):</label><br>
+                            <label for="Mãe">Nome da Mãe:</label><br>
+                            <label for="pai">Nome do Pai:</label><br>
+                            <label for="telefone">Telefone:</label><br>
+                            <label for="email">E-mail:</label><br>
+                        </td>
+
+                        <td style="text-align: left;">
+                            <input type="text" id="nome" name="nome"><br>
+                            <input type="text" id="nascimento" name="Dia" style="max-width:40px;">/
+                            <input type="text" id="nascimento" name="Mês" style="max-width:40px;">/
+                            <input type="text" id="nascimento" name="Ano" style="max-width:50px;"><br>
+                            <input type="text" id="mae" name="mae"><br>
+                            <input type="text" id="pai" name="pai"><br>
+                            <label for="telefone">DDD:</label>
+                            (<input type="text" id="DDD" name="DDD" style="max-width:40px;">) 
+                            <label for="tel">Tel:</label>
+                            <input type="text" id="tel" name="tel" style="max-width:100px;">
+                            <label for="ramal">Ramal:</label>
+                            <input type="text" id="ramal" name="ramal" style="max-width:60px;"><br>
+                            <input type="email" id="email" name="email"><br>
+                        </td>
+                    </tr>
+                </table>    
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>Informações de Matrícula:</legend>
+            
+            <div class="bloco">
+                <div style="text-align: left;">
+                    <label for="serie">Série:</label>
+                    <select id="serie" name="serie">
+                        <option value="pre-escolar">Pré-escolar</option>
+                        <option value="fundamental1">Fundamental 1º ao 5º</option>
+                        <option value="fundamental2">Fundamental 6º ao 9º</option>
+                        <option value="ensino-medio">Ensino Médio</option>
+                    </select><br>
+                </div>
+                
+                <div style="text-align: left;">
+                    <label>Turno:</label><br>
+                    <input type="radio" id="manha" name="turno" value="manha">
+                    <label for="manha">Manhã</label><br>
+                    <input type="radio" id="tarde" name="turno" value="tarde">
+                    <label for="tarde">Tarde</label><br>
+                </div>
+
+                <div style="text-align: left;">
+                    <label>Atividades Extracurriculares:</label><br>
+                    <input type="checkbox" id="informatica" name="atividade" value="informatica">
+                    <label for="informatica">Informática</label><br>
+                    
+                    <input type="checkbox" id="musica" name="atividade" value="musica">
+                    <label for="musica">Música</label><br>
+                    
+                    <input type="checkbox" id="ballet" name="atividade" value="ballet">
+                    <label for="ballet">Ballet</label><br>
+                    
+                    <input type="checkbox" id="pintura" name="atividade" value="pintura">
+                    <label for="pintura">Pintura</label><br>
+                    
+                    <input type="checkbox" id="judo" name="atividade" value="judo">
+                    <label for="judo">Judô</label><br>
+                    
+                    <input type="checkbox" id="futebol" name="atividade" value="futebol">
+                    <label for="futebol">Futebol</label><br>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="buttons">
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Limpar Campos">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

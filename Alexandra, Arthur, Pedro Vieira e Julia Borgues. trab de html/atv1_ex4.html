@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Arthur do Vale, Alexandra Cristina, Pedro Henrique Vieira, Júlia Borges-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV1 – Exercício 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #702c2c;
+            margin: 20px;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #571717;
+            color: rgb(134, 48, 48);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3a0000;
+            font-weight: bold;
+        }
+        article {
+            background-color: #572c2c;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #b88c8c;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            background-color: #9e1717;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .example {
+            background-color: #642929;
+            padding: 15px;
+            border-left: 4px solid #000000;
+            margin-top: 15px;
+        }
+        footer p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ATV1 – Exercício 4</h1>
+    </header>
+
+    <nav>
+        <a href="#definicao">O que é Semântica?</a>
+        <a href="#importancia">Importância no HTML5</a>
+        <a href="#exemplos">Exemplos Práticos</a>
+    </nav>
+
+    <article>
+        <section id="definicao">
+            <h2>O que é Semântica?</h2>
+            <p>A semântica se refere ao <span class="highlight">significado</span> das palavras, símbolos ou elementos em um determinado contexto. No caso do HTML, a semântica está relacionada à maneira como os elementos são usados para definir a estrutura e o significado do conteúdo de uma página.</p>
+            <p>Usar elementos semânticos em HTML significa utilizar tags que descrevem claramente o propósito do conteúdo, ajudando tanto os desenvolvedores quanto os navegadores e mecanismos de busca a entenderem a função e a hierarquia de cada parte da página.</p>
+        </section>
+
+        <section id="importancia">
+            <h2>Por que a Semântica é tão Importante no HTML5?</h2>
+            <p>No HTML5, a introdução de elementos semânticos como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, e outros foi um grande avanço. Isso melhorou a acessibilidade, SEO (otimização para motores de busca) e a manutenção do código.</p>
+            <p>Por exemplo, ao usar <code>&lt;article&gt;</code> para um artigo ou <code>&lt;nav&gt;</code> para navegação, fica claro tanto para os navegadores quanto para outros desenvolvedores o propósito daquele bloco de conteúdo. Isso também facilita para dispositivos de leitura de tela que auxiliam pessoas com deficiências visuais.</p>
+        </section>
+
+        <section id="exemplos" class="example">
+            <h2>Exemplos Práticos de Elementos Semânticos no HTML5</h2>
+            <p>Abaixo estão alguns dos principais elementos semânticos introduzidos no HTML5:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Representa o cabeçalho de uma página ou seção.</li>
+                <li><code>&lt;nav&gt;</code>: Define um bloco de links de navegação.</li>
+                <li><code>&lt;section&gt;</code>: Representa uma seção de conteúdo tematicamente relacionada.</li>
+                <li><code>&lt;article&gt;</code>: Usado para conteúdo independente, como artigos ou posts de blog.</li>
+                <li><code>&lt;aside&gt;</code>: Define conteúdo relacionado, mas não essencial, como uma barra lateral.</li>
+                <li><code>&lt;footer&gt;</code>: Representa o rodapé de uma página ou seção.</li>
+            </ul>
+        </section>
+    </article>
+
+    <footer>
+        <p>ATV1 – Exercício 4</p>
+    </footer>
+
+</body>
+</html>

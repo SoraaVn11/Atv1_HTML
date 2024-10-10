@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Arthur do Vale, Alexandra Cristina, Pedro Henrique Vieira, Júlia Borges-->
+<html lang="en">
+<head>
+        <title>Nome, Sexo e escolaridade</title>
+<style>
+    table, th, td{
+        border: 1px solid black;
+        text-align: center;
+    }
+    th,td{
+        padding: 10px;
+    }
+
+</style>
+</head>
+<body>
+        <table>
+ 
+            <tr style="width: 60%;">
+                <th>Nome:</th>
+                <th><input type="text" id="Nome" name="Nome"></th>
+                
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td><input type="radio" id="Masculino" name="Sexo">
+                    <label for="Masculino">Masculino</label>
+                <input type="radio" id="Feminino" name="Sexo">
+                   <label for="Feminino">Feminino</label>
+                </td>
+                
+            </tr>
+                <td colspan="2">Escolaridade:
+                    <select id="escolaridade" name="escolaridade">
+                        <option value="1º Grau">1º Grau</option>
+                        <option value="12º Grau">2º Grau</option>
+                        <option value="superior">superior</option>
+                    </select>
+                </td>
+
+            
+        </table>
+</body>
